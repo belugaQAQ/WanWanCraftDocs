@@ -1,6 +1,6 @@
 # WanWanCraft
 
-![下载](C:\Users\76377\Desktop\下载.png)
+![下载](1.png)
 
 ## 服务器详情
 
