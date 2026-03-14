@@ -1,7 +1,5 @@
-# WanWanCraft
 
-![下载](1.png)
-
+![WanWanCraft](1.png)
 ## 服务器详情
 
 服务器核心：Java1.21.8 Fabric
@@ -117,6 +115,28 @@ skin set web (classic|slim) "<URL>" [<目标玩家>]
 
 重置为默认皮肤或删除任何自定义皮肤。
 
+### MCDR类
+
+`/!!head <player> [number]` 获取 \<player> 的头颅[number] 个，若[number]未指定，则默认1个
+
+`/!!help` 显示MCDR插件的教程
+
+`/!!joinMsg` 测试进服通知
+
+`/!!jrrp` 测试今日Wan值，若今天没测试，那么进服是会有提醒
+
+`/!!kill` 紫砂，无op可用
+
+`/!!MCDR` 查看MCDR版本
+
+`/!!mg` 测试mg**（大部分时候没用）**
+
+`/!!recipe` 解锁配方，无op可用
+
+`/!!tips` 开启/关闭Tips*（嫌烦关）*
+
+`/!!url` 发送带简介的可点击链接，发链接时非常建议使用
+
 ### 假人指令
 
 - `/player <name> spawn`: 在当前位置生成具有给定名称的假人玩家。
@@ -163,3 +183,13 @@ skin set web (classic|slim) "<URL>" [<目标玩家>]
 - `/back`– 传送回你之前的位置（TPA传送后有效）。
 
 `[target]`是可选的，默认为执行人。
+
+### Ledger指令
+
+- `/lg inspect（可简写为 /lg i）`：开启检索模式，左/右击方块可进行查询
+- `/lg search <行为|目标|世界|范围|对象|时间>（可简写为 /lg s）`：规则检索模式
+- `/lg rollback <行为|目标|世界|范围|对象|时间> （可简写为 /lg rb）`：按规则回滚**（不会用别用！！！）**
+- `/lg page（可简写为 /lg pg）`：搜索结果换页
+- `/lg restore`：撤销回滚
+- `/lg tp <world> <x> <y> <z>`：将玩家传送到指定维度的坐标
+- `/lg status`：查看模组版本以及状态
