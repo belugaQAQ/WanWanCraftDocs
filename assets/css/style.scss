@@ -3,3 +3,46 @@
 
 @import "{{ site.theme }}";
 
+$font-1: 'MyCustomFont';
+$font-2: 'MyCustomFont1';
+$font-path: '../fonts/';
+@font-face {
+  font-family: $font-1;
+  src: url('#{$font-path}gsans.woff2') format('woff2'),
+       url('#{$font-path}gsans.woff') format('woff'),
+       url('#{$font-path}gsans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; // 优化字体加载性能
+}
+@font-face {
+  font-family: $font-2;
+  src: url('#{$font-path}notosc.woff2') format('woff2'),
+       url('#{$font-path}notosc.woff') format('woff'),
+       url('#{$font-path}notosc.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; // 优化字体加载性能
+}
+:root {
+  --font-family-base: $font-2, 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', sans-serif;
+  --font-family-heading: $font-1, 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', sans-serif;
+  --font-family-code: 'Consolas', 'Monaco', 'Menlo', 'Courier New', monospace;
+}
+
+// 应用字体到各个元素
+body {
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+}
+
+code, pre, .highlight {
+  font-family: var(--font-family-code);
+  font-size: 14px;
+}
